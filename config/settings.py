@@ -8,16 +8,11 @@ load_dotenv(override=True)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 SECRET_KEY = "django-insecure-0mf9c2#^ml#m*g-ks-v8+n0rm^!7e=2#9nuedvasippkf&of_o"
 
 DEBUG = True if os.getenv("DEBUG") == "True" else False
 
-
-
-
 ALLOWED_HOSTS = ["*"]
-
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -74,7 +69,6 @@ REST_FRAMEWORK = {
     ],
 }
 
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
@@ -85,7 +79,6 @@ DATABASES = {
         "PORT": os.getenv("POSTGRES_PORT", default="5432"),  # default postgres port
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -102,7 +95,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "UTC"
@@ -111,12 +103,10 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 STATIC_URL = "static/"
 
 STATICFILES_DIRS = (BASE_DIR / "static",)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
