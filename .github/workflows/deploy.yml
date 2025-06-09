@@ -28,7 +28,7 @@ jobs:
         image: postgres:17
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: anastaA05
+          POSTGRES_PASSWORD: artemtrololo
           POSTGRES_DB: django_project
         ports:
           - 5432:5432
@@ -45,7 +45,7 @@ jobs:
       ENGINE: django.db.backends.postgresql
       POSTGRES_DB: django_project
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: anastaA05
+      POSTGRES_PASSWORD: artemtrololo
       POSTGRES_HOST: localhost
       POSTGRES_PORT: 5432
       DEBUG: true
